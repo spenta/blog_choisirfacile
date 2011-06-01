@@ -28,7 +28,7 @@ define('DB_USER', 'choisirfaci-6665');
 define('DB_PASSWORD', 'manah');
 
 /** Adresse de l'hébergement MySQL. */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db01-share');
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define('DB_CHARSET', 'utf8');
