@@ -1,0 +1,17 @@
+#information p{
+	position:relative;
+	margin-left:40px;
+	margin-top:-40px;
+}
+
+#bouton p a{
+	position:relative;
+	display:block;
+	padding-top:28px;
+	height:80px;
+	width:225px;
+}
+
+#searchsubmit{
+	margin-top:1px;
+}

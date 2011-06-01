@@ -1,0 +1,588 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background: url(images/background.jpg) repeat-x #FFF;
+}
+
+.clear{
+	clear:both;
+	padding:0;
+	margin:0;
+}
+
+
+/***************** Style du header *******************/
+#header{
+	height:68px;
+	width:100%;
+	background-color:#333;
+}
+
+
+/***************** Style du footer *******************/
+#footer{
+	height:68px;
+	width:100%;
+	margin-top:40px;
+	background-color:#999;
+}
+
+
+
+/*************** Style de la page *******************/
+#contenu{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/******************** Style de la description rapide du produit **********************/
+#fiche_descriptive{
+	height:358px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+
+#nom_du_produit{
+	height:100%;
+	width:292px;
+	float:left;
+}
+
+#nom_du_produit p{
+	text-indent:5px;
+	font-size:22px;
+}
+
+.desc_nom_marque{
+	color:#000;
+	font-weight:bold;
+	margin-top:13px;
+}
+
+.desc_nom_produit{
+	font-weight:bold;
+	margin-top:10px;
+}
+
+.bg_miniature_produit{
+	background: url(images/background_miniature.jpg);
+	height:251px;
+	margin-top:13px;
+}
+
+.miniature_produit{
+	padding:18px;
+	width:256px;
+	height:215px;
+}
+
+/*******************/
+#caracteristique_du_produit{
+	position:relative;
+	width:646px;
+	right:0px;
+	height:100%;
+	float:right;
+	display:inline-block;
+}
+
+
+#bloc_dynamique .alascore_miniature{
+	position:relative;
+	width:59px;
+	height:70px;
+	margin-bottom:5px;
+	display:block;
+}
+
+.attr_tableau{
+	width:569px;
+	float:left;
+}
+
+.img_tableau{
+	width:77px;
+	background:url(images/bulle_info_dynamique.jpg);
+	height:71px;
+}
+
+#bloc_dynamique{
+	float:left;
+}
+
+#bloc_dynamique > div{
+	display:inline-block;
+}
+
+#bloc_dynamique .attr_tableau > p {
+	text-indent:10px;
+}
+
+
+#bloc_statique{
+	text-align:right;
+	width:646px;
+}
+
+#bloc_statique > div{
+	display:inline-block;
+}
+
+#bloc_statique > p {
+	text-indent:10px;
+}
+
+#bloc_statique .alascore_miniature{
+	width:59px;
+	height:70px;
+	float:left;
+}
+
+.titre_fiche{
+	font-weight:bold;
+	font-size:14px;
+	padding-top:12px;
+}
+
+.commentaire_fiche{
+	font-size:12px;
+	width:333px;
+	padding-top:7px;
+	margin-bottom:13px;
+}
+
+#fiche_bouton{
+	width:165px;
+	height:63px;
+	background-image:url("images/bouton_fiche.png");
+	margin-left:10px;
+	margin-right:5px;
+	margin-top:7px;
+}
+
+#fiche_bouton:hover{
+	background-position: bottom right;
+	width:165px;
+	height:63px;
+	outline:none;
+}
+
+#fiche_bouton a{
+	display:block;
+	padding-top:10px;
+	width:165px;
+	height:63px;
+	text-decoration:none;
+	color:#555555;
+	text-shadow:0 1px 1px #ffffff;
+}
+
+.separateur_statique{
+	width:100%;
+	height:5px;
+	background:url(images/separateur_horizontal.jpg);
+}
+
+.titre_tableau{
+	font-size:18px;
+	font-weight:bold;
+	text-align:left;
+	text-shadow:0 1px 1px #bbbbbb;
+	/*padding-top:10px;*/
+}
+
+.commentaire_tableau{
+	padding-top:8px;
+	font-size:12px;
+	text-align:left;
+	margin-bottom:5px
+}
+#tableau_desc{
+	float:right;
+}
+
+#tableau_desc td{
+	border:1px #d9dee1 solid;
+	height:29px;
+	background-color:#fff;
+}
+
+#tableau_desc td p{
+	/*display:inline-block;*/
+	text-indent:15px;
+	color:#000;
+	text-align:left;
+	font-size:12px;
+}
+
+.title_tab_desc{
+	font-weight:bolder;
+}
+
+.sur10{
+	font-size:11px;
+}
+
+.question_desc{
+	/*display:inline-block;*/
+	float:right;
+	margin-right:10px;
+}
+
+
+#tableau_desc .note{
+	font-weight:bolder;
+    float: right;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+
+/************************ Calque de partage ************************/
+.partage{
+	/*position:relative;
+	top:10px;
+	right:5px;
+	color:#ffffff;
+	float:right;*/
+	margin-top:10px;
+	float:right;
+}
+
+.partage ul{
+	height:20px;
+}
+
+.partage ul li{
+	float:left;
+	margin-right:5px;
+}
+
+
+.partage ul li > p{
+	font-size:12px;
+	font-weight:bold;
+}
+
+/******************  PROGRESS BAR CSS  ***************************/
+	.progress-bar {
+		background: url(images/bg_progressBar.jpg) no-repeat left center;
+		width: 133px;
+		height: 17px;
+		margin-left:10px;
+		/*display:inline-block;*/
+	}
+	
+	.progress-level {
+		height: 17px;
+		background: url(images/progressBar.jpg) no-repeat left center;
+	}
+	
+	#progress-bar-1{
+		width: 20%; /* SET THIS TO GET THE DESIRE LEVEL */
+	}
+	
+	#progress-bar-2{
+		width: 10%;
+	}
+	
+	#progress-bar-3{
+		width: 80%;
+	}
+	
+	#progress-bar-4{
+		width: 40%;
+	}
+	
+	#progress-bar-5{
+		width: 40%;
+	}
+	
+	#progress-bar-6{
+		width: 40%;
+	}
+	
+
+/******************  PROGRESS BAR ETOILE CSS  ***************************/
+	.progress-bar-etoile {
+		background: url(images/etoile.png) no-repeat left center;
+		width: 65px;
+		height: 15px;
+		margin-left:10px;
+		/*display:inline-block;*/
+	}
+	
+	.progress-level-etoile {
+		height: 15px;
+		background: url(images/etoile_jaune.png) no-repeat left center;
+	}
+	
+	#progress-bar-1-etoile{
+		width: 100%; /* SET THIS TO GET THE DESIRE LEVEL */
+	}
+	
+	#progress-bar-2-etoile{
+		width: 50%;
+	}
+	
+	#progress-bar-3-etoile{
+		width: 100%;
+	}
+	
+	#progress-bar-4-etoile{
+		width: 15%;
+	}
+	
+	#progress-bar-5-etoile{
+		width: 60%;
+	}
+	
+	#progress-bar-6-etoile{
+		width: 85%;
+	}	
+	
+/************************* Style Bloc Marchand proposé  ***************************************/
+h2{
+	color:#50a5d7;
+	font-size:14.5px;
+	font-weight:bold;
+	margin-top:7px;
+	margin-bottom:7px;
+}
+
+#vignette_marchand{
+	background-image:url("images/fond_bloc_page.png");
+	width:168px;
+	height:157px;
+	float:left;
+	margin-right:30px;
+}
+
+.last_marchand{
+	margin-right:0px!important;
+}
+
+#vignette_marchand > img{
+	padding-top:13px;
+}
+
+.thumb_pc{
+	height:60px;
+	width:66px;
+	display:inline-block;
+	margin-left:7px;
+}
+
+.thumb_marchand{
+	height:61px;
+	width:68px;
+	display:inline-block;
+	margin-left:14px;
+}
+
+.prix{
+	color:#333333;
+	margin-top:8px;
+	font-weight:bold;
+	font-size:24px;
+	text-align:center;
+}
+
+.bouton_marchand{
+	background:url("images/acheter.png") no-repeat;
+	height:28px;
+	width:134px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+}
+
+.bouton_marchand a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#FFF;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	padding-top:5px;
+}
+
+.no_marchand{
+	width:134px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	color:#333333;
+	font-size:12px;
+	text-align:center;
+	
+}
+
+.lien-marchand{
+	text-decoration:underline;
+	font-size:11px;
+	font-weight:bold;
+	color:#50a5d7;
+	float:right;
+	margin-top:7px;
+}
+
+
+
+/*********************** Menu avec onglet *****************/
+
+#menu_bottom{
+}
+
+ul.menu_bottom li{
+	background: #5ba4d0;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#5ba4d0), to(#036ba9));
+	background: -moz-linear-gradient(#5ba4d0, #036ba9);
+	background: linear-gradient(#5ba4d0, #036ba9);
+	position: relative; 
+	cursor: pointer;
+	-moz-border-radius:8px 8px 0 0;
+	-webkit-border-radius:8px 8px 0 0;
+	-khtml-border-radius:8px 8px 0 0;
+	border-radius:8px 8px 0 0;
+	border:1px solid #046ba9;
+	height:32px;
+	float:left;
+	margin-right:5px;
+	behavior:url(css3_ie/PIE.htc);
+}
+
+ul.menu_bottom li:hover{
+	background: #c3e4f8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#c3e4f8), to(#4f9dcb));
+	background: -moz-linear-gradient(#c3e4f8, #4f9dcb);
+	background: linear-gradient(#c3e4f8, #4f9dcb);
+}
+
+ul.menu_bottom .active{
+	background: #c3e4f8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#c3e4f8), to(#4f9dcb));
+	background: -moz-linear-gradient(#c3e4f8, #4f9dcb);
+	background: linear-gradient(#c3e4f8, #4f9dcb);
+}
+
+ul.menu_bottom li a{
+	position:relative;
+	text-decoration:none;
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px;
+	display:block;
+}
+
+#fiche_complete{
+	margin-top:15px;
+	padding-bottom:15px;
+}
+
+#fiche_complete > div {
+	border:solid 1px #a7d2eb;
+	background-color:#FFF;
+	padding:25px;
+	/*padding-bottom:10px;*/
+}
+
+
+.titre_fiche_desc{
+	text-decoration:none;
+}
+
+.tableau_fiche_complete{
+	width:434px;
+	float:left;
+	margin-top:10px;
+	/*margin-bottom:15px;*/
+}
+
+
+.tableau_fiche_complete thead tr{
+	height:40px;
+	background-color:#50a5d7;
+}
+
+.tableau_fiche_complete .title{
+	color:#FFF;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+}
+
+.tableau_fiche_complete tbody tr td{
+	width:50%;
+	border:1px solid #e2e2e2;
+	height:29px;
+	font-size:12px;
+	text-indent:10px;
+}
+
+.tab_complete_maitre{
+	font-weight:bold;	
+	font-size:13px;
+}
+
+.text_intro{
+	font-size:12px;
+	text-align:justify;
+	margin-bottom:40px;
+}
+
+/*********************** infobulle *****************/
+
+a.tooltip em {
+    display:none;
+}
+a.tooltip:hover {
+	border: 0;
+    position: relative;
+    z-index: 500;
+    text-decoration:none;
+}
+a.tooltip:hover em {
+    font-style: normal;
+    display: block;
+    position: absolute;
+    top: -38px;
+    left: 210px;
+    padding: 5px;
+    color: #000;
+    border: 1px solid #bbb;
+    background: #ffc;
+    width:170px;
+	z-index:11;
+}
+a.tooltip:hover em span {
+    position: absolute;
+    top: 28px;
+    left: 13px;
+    height: 7px;
+    width: 11px;
+    background-image: url("images/infobulleimg.png");
+    border: 0;
+	z-index:10;
+
+}
+
+.img_tableau p{
+	font-size:11px;
+	color:#000000;
+	padding:3px;
+	text-align:center;
+}
+/*********************** fin infobulle *****************/
+
+
+.miniature_produit img{
+	width:100%;
+}

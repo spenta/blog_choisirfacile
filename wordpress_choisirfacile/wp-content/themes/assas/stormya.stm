@@ -1,0 +1,68 @@
+s:2160:"echo \'	</div><!-- #container -->
+</div><!-- #wrapper -->
+</div>\';
+$theme_options = get_option(\'wktheme\');
+
+echo \'<div id=\"container-bottom\">
+		<div id=\"bottom\">
+			<div id=\"bottom-glow\">
+			<div class=\"centercolumn\">
+				<div class=\"column\">
+					<div class=\"col1\">
+						<ul>	
+							<li id=\"text-4\" class=\"widget-container widget_text\">
+								<h2>&nbsp;</h2>			
+								<div class=\"textwidget\">&nbsp;</div>
+							</li>
+						</ul>
+					</div><!-- end .col1 -->
+					<div class=\"col2\">
+						<ul>
+							<li id=\"text-3\" class=\"widget-container widget_text\">
+								<h2>&nbsp;</h2>
+									<div class=\"textwidget\"></div>
+							</li>
+      
+						</ul>
+					</div>
+					<!-- end .co2l -->
+					<div class=\"col3\">
+						<ul>	
+							<li id=\"ts_recentpostswidget-3\" class=\"widget-container widget_ts_recentpostswidget\">                  
+								<h2>Latest news</h2>						
+									<ul class=\"newslist\">\';
+										wp_get_archives(\'type=postbypost&limit=5\');  
+									echo \'</ul>
+							</li>  
+						</ul>
+					</div><!-- end .col3 -->
+				</div><!-- end #column -->
+
+				<div class=\"clear\"></div><!-- clear float -->
+				
+			</div><!-- end .centercolumn -->
+			</div><!-- end #bottom-glow -->
+		</div><!-- end #bottom -->
+
+<div id=\"footer\">
+			<div class=\"centercolumn\">
+
+				<div id=\"footer-right\">\';
+			echo \'<img src=\"\'; bloginfo(\'template_directory\'); echo \'/images/logo-footer.png\" alt=\"logo\" />\';
+							echo	\'</div><!-- end #footer-right -->
+
+				<div id=\"footer-left\">
+					Copyright &copy;\';
+					bloginfo(\'name\');
+					
+					echo \'&nbsp;|&nbsp; <stormya><a href="http://www.wptemplates.net" target="_blank">Free wordpress templates</a></stormya> &nbsp;|&nbsp; <stormya><a href="http://www.fwpmt.com" target="_blank">Wordpress news and magazine</a></stormya> &nbsp;|&nbsp; <stormya><a href="http://wptrainingcenter.com" target="_blank">Wordpress tutorials</a></stormya>		
+				</div><!-- end #footer-left -->
+</div>
+</div>
+</div>\';
+
+wp_footer();
+
+echo \'<!-- ThemeName: assas-->\';
+echo \'</body>
+</html>\';";

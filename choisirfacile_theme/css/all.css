@@ -1,0 +1,291 @@
+/*
+Theme Name : Choisir facile
+Version : 1.0 (29 avril. 2011)
+*/
+
+@import "reset.css";
+
+body {
+}
+#page {
+	margin-top:20px;
+	padding: 0;
+	width:100%;
+	background-color:#4fa5d6;
+}
+
+/*header*/
+#header{
+	height:68px;
+	width:100%;
+	background-image:url("images/fond_menu.png");
+	background-repeat:repeat-x;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+
+/* integration logo */
+
+#headerimg #logo {
+	float:left;
+	clear:both;
+}
+
+#headerimg #logo h1{
+	font-size:40px;
+	padding-top:12px;
+}
+
+#headerimg #logo h1 a{
+	text-decoration:none;
+	color:#fff;
+}
+
+/*end integration logo*/
+
+/*integration menu */
+
+#headerimg #menu ul{
+	 padding:0;
+	 margin:0;
+	 list-style-type:none;
+}
+
+#headerimg #menu ul li{
+	 margin-left:2px;
+	 float:left; /*pour IE*/
+}
+
+/*end integration menu*/
+/*fin_header*/
+
+
+#header {
+	position:relative;
+	height:70px;
+	background-image:url("../images/fond_menu.png");
+}
+
+#headerimg 	{
+	position:relative;
+	width:960px;
+	height:70px;
+	margin:auto;
+	background-image:url("../images/fond_menu.png");
+	background-repeat:repeat-x;
+}
+
+#headerimg  #droite{
+	position:relative;
+	float:right;
+}
+
+#headerimg #menu{
+	float:right;
+	padding-top:20px;
+}
+
+#headerimg #sociaux{
+	float:right;
+	margin-top:3px;
+}
+
+#headerimg #sociaux ul li{
+	float:left;
+	padding-top:15px;
+	padding-right:20px;
+}
+
+#headerimg #menu ul li{
+	background-image:url("../images/separation.png");
+	background-repeat:no-repeat;
+	background-position:right;
+	padding-right:5px;
+}
+
+#headerimg #menu ul li a{
+	display:block;
+	float:left;   
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	padding:5px;
+	font-size:17px;
+}
+
+#headerimg #menu ul li a:hover{
+	color:#94eba5;
+}
+
+
+.narrowcolumn {
+	width: 590px;
+  float: left;
+  /*padding: 0 20px 0 0;*/
+  margin: 0;
+}
+
+.widecolumn {
+width: 590px;
+  float: left;
+  padding: 0 20px 0 0;
+  margin: 0;
+}
+
+#sidebar {
+width: 230px;
+  float: left;
+}
+.post {
+
+}
+.clear { 
+clear: both; 
+}
+/**
+    Nav and Subnav
+    Split these out if you want the two levels to look different
+  */
+  #nav,
+  #subNav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  #subNav {
+    margin-top: 10px;
+}
+    #nav li,
+    #subNav li {
+      display: inline;
+      padding: 0 10px 0 0;
+}
+
+#footer {
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height:50px;
+	clear: both;
+	background-color:#d7d7d7;
+	margin-top:25px;
+}
+
+
+/* Pour les items du menu principal qui sont sélectionnés (si applicable) */
+
+    .current_page_item a,
+    .current_page_parent a {
+      text-decoration: none;
+    }
+      .current_page_item a:hover,
+      .current_page_parent a:hover {
+        text-decoration: underline;
+      }
+
+/* Styles par défaut Wordpress----------------- */
+
+.entry-content img {
+    margin: 0 0 18px 0;
+    max-width:100%;
+}
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+.wp-caption {
+	text-align: center;
+	margin-bottom:18px;
+}
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+.wp-caption p.wp-caption-text {
+	margin: 0;
+	padding:5px;
+}
+.gallery img {
+    margin:0;
+}
+.wp-smiley {
+	max-height:12px;
+	margin:0 !important;
+}
+
+
+
+/*footer*/
+/*pied*/
+
+#footer .pied{
+	position:relative;
+	width:960px;
+	height:50px;
+	margin:auto;
+}
+
+#footer .pied div{
+	text-align:center;
+	padding-top:10px;
+	color:#7b7b7b;
+	font-size:12px;
+}
+
+#footer .pied div div.copy{
+	float:left;
+}
+
+#footer .pied div div.foot{
+	float:right;
+}
+
+.clear {
+	clear:both; 
+	margin:0; 
+	padding:0; 
+	height:0; 
+	line-height:0; 
+	font-size:0; 
+}
+/*end pied*/
+/*fin footer*/
+
+.menu_item li{
+	float:left;
+}
+
+.menu_item li a{
+	padding-right:5px;
+	padding-left:5px;
+	text-decoration:none;
+	color:#7b7b7b;
+}
+
+.menu_item li a:hover{
+	text-decoration:underline;
+}

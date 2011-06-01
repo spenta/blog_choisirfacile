@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fiche produit</title>
+
+<!-- Déclaration des CSS -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css">
+<link rel="stylesheet" href="fiche_produit.css" type="text/css" /> 
+<!--[if IE 7]><link rel="stylesheet" type="text/css" href="ie7.css" /><![endif]-->
+
+<!-- Déclaration des scripts -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" type="text/javascript"></script> 
+<script type="text/javascript" src="includes/domtab.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".tableau_fiche_complete tbody tr:odd").css("background-color","#eff7fb");
+		$(".tableau_fiche_complete:odd").css("margin-left","39px");
+		
+		/* Permet de générer dynamiquement la taille de la progressBar */
+		$('#progress-bar-1').css('width',ValeurProgressBar(8)+'%');
+	});
+	
+	function ValeurProgressBar(valIn){
+		return (valIn+10)/2*10;
+	}
+</script>
+
+
+</head>
+
+<body>
+
+    <div id="header">
+    </div>
+    
+    <div id="contenu">
+    	<div id="fiche_descriptive">
+        	<div id="nom_du_produit">
+            	<p class="desc_nom_marque"><!-- nom de la marque -->Ordinateur Acer</p>
+            	<p class="desc_nom_produit"><!-- nom du produit -->Ultra E527-902G25MN</p>
+                <div class="bg_miniature_produit"> <!-- Permet d'ajouter un arrondi sur le cadre -->
+                	<div class="miniature_produit">
+                    	<!-- image du produit --><img src="http://static.comparer.fr/fotos/183x160/0/3/9/2/emachines-ultra-e527-902g25mn-17740392.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div id="caracteristique_du_produit">
+            	<!-- Bloc modifié selon la provenance -->
+                <div id="bloc_statique" class="bloc_desc">
+                	<!--<img src="http://alatest.com/blog/wp-content/uploads/2010/11/alaScore1.jpg" class="alascore_miniature" />-->
+                    <div class="info_fiche">
+                   	  <p class="titre_fiche">Vous ne savez pas quel PC choisir ?</p>
+                        <p class="commentaire_fiche">En quelques minutes, répondez à notre questionnaire et nous trouvons le meilleru PC portable pour vos besoins !</p>
+                  </div>
+              	<div id="fiche_bouton">
+                    <a href="#" ></a>
+                </div>
+                <div class="separateur_statique"></div>
+                <p class="titre_tableau">Les caractéristiques qui comptent le plus pour vous</p>
+                <p class="commentaire_tableau">Comparez facilement les performances de cet ordinateur avec ce dont vous avez besoin.</p>
+               
+            	</div>
+                <!-- Tableau des caracteritiques principales -->
+                <div>
+                    <table id="tableau_desc">
+                        <tbody>
+                            <tr>
+                              <td width="246"><div class="bulle"><a href="#" class="tooltip"><img src="images/question_desc.jpg" class="question_desc"/><em><span></span>texte de l'infobulle</em></a></div><p class="title_tab_desc">Processeur</p></td>
+                              <td width="184"><p>Intel Celeron 900</p></td>
+                              <td width="202">
+                                <p class="note" id="note-1">2<span class="sur10">/10</span></p>
+           							<div class="progress-bar"> 
+                                        <div class="progress-level" id="progress-bar-1"></div> 
+                                    </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td><div class="bulle"><a href="#" class="tooltip"><img src="images/question_desc.jpg" class="question_desc"/><em><span></span>texte de l'infobulle</em></a></div><p class="title_tab_desc">Carte graphique</p></td>
+                              <td><p>GMA 4500</p></td>
+                              <td>
+                                    <p class="note" id="note-2">1<span class="sur10">/10</span></p>
+                                	<div class="progress-bar"> 
+                                        <div class="progress-level" id="progress-bar-2"></div> 
+                                    </div>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td><div class="bulle"><a href="#" class="tooltip"><img src="images/question_desc.jpg" class="question_desc"/><em><span></span>texte de l'infobulle</em></a></div><p class="title_tab_desc">Taille de l’écran (pouces)</p></td>
+                                <td><p>15.6</p></td>
+                                <td>
+                                    <p class="note" id="note-3">8<span class="sur10">/10</span></p>
+                                	<div class="progress-bar"> 
+                                        <div class="progress-level" id="progress-bar-3"></div> 
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="bulle"><a href="#" class="tooltip"><img src="images/question_desc.jpg" class="question_desc"/><em><span></span>texte de l'infobulle</em></a></div><p class="title_tab_desc">Mémoire vive (Mo)</p></td>
+                                <td><p>20480</p></td>
+                                <td>
+                                    <p class="note" id="note-4">4<span class="sur10">/10</span></p>
+                                	<div class="progress-bar"> 
+                                        <div class="progress-level" id="progress-bar-4"></div> 
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="bulle"><a href="#" class="tooltip"><img src="images/question_desc.jpg" class="question_desc"/><em><span></span>texte de l'infobulle</em></a></div><p class="title_tab_desc">Poids (kg)</p></td>
+                                <td><p>2.64</p></td>
+                                <td>
+                                    <p class="note" id="note-5">4<span class="sur10">/10</span></p>
+                                	<div class="progress-bar"> 
+                                        <div class="progress-level" id="progress-bar-5"></div> 
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><div class="bulle"><a href="#" class="tooltip"><img src="images/question_desc.jpg" class="question_desc"/><em><span></span>texte de l'infobulle</em></a></div><p class="title_tab_desc">Disque dur (Go)</p></td>
+                                <td><p>250</p></td>
+                                <td>
+                                    <p class="note" id="note-6">4<span class="sur10">/10</span></p>
+                                	<div class="progress-bar"> 
+                                        <div class="progress-level" id="progress-bar-6"></div> 
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Calque permettant de partager le produit -->
+                <div class="partage">
+						<ul>
+							<li><p>Partager cette fiche produit :</p></li>
+							<li><a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+							<li><a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php" class="fb_share">Partager</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></li>
+						</ul>
+					</div>
+              </div>
+            <div class="clear"></div>
+        </div>
+        
+        <!-- Bloc marchand proposé  -->
+        <div id="marchand_propose">
+        	<h2>Nous vous proposons</h3>
+        	<div id="vignette_marchand">
+				<img src="images/exemple_ordi.jpg" class="thumb_pc"/>
+				<img src="images/exemple_logo.jpg" class="thumb_marchand" />
+				<p class="prix">286,99 €</p>
+				<div class="bouton_marchand"><a href="#">Acheter</a></div>
+            </div>
+            
+            
+        	<div id="vignette_marchand">
+				<img src="images/exemple_ordi.jpg" class="thumb_pc"/>
+				<img src="images/exemple_logo.jpg" class="thumb_marchand" />
+				<p class="prix">286,99 €</p>
+				<div class="bouton_marchand"><a href="#">Acheter</a></div>
+            </div>
+        
+        
+        
+        	<div id="vignette_marchand">
+				<img src="images/exemple_ordi.jpg" class="thumb_pc"/>
+				<img src="images/exemple_logo.jpg" class="thumb_marchand" />
+				<p class="prix">286,99 €</p>
+				<div class="bouton_marchand"><a href="#">Acheter</a></div>
+            </div>
+        
+        
+        
+        	<div id="vignette_marchand">
+				<img src="images/exemple_ordi.jpg" class="thumb_pc"/>
+				<img src="images/exemple_logo.jpg" class="thumb_marchand" />
+				<p class="prix">286,99 €</p>
+				<div class="bouton_marchand"><a href="#">Acheter</a></div>
+            </div>
+        
+        
+        	<div id="vignette_marchand" class="last_marchand">
+				<img src="images/exemple_ordi.jpg" class="thumb_pc"/>
+				<img src="images/exemple_logo.jpg" class="thumb_marchand" />
+				<p class="prix">286,99 €</p>
+				<div class="no_marchand"><p>Cet ordinateur n’est pas vendu par ce site</p></div>
+            </div>
+        	
+            <a href="#" class="lien-marchand">Voir toutes les offres</a>
+        	<div class="clear"></div>
+        </div>
+        
+        
+        <!-- Bloc fiche descriptif  -->
+        <div id="fiche_complete" class="domtab">
+        	<ul class="menu_bottom">
+                <li><a href="#fiche">Fiche détaillée</a></li>
+                <li><a href="#voir">Voir toutes les offres</a></li>
+                <div class="clear"></div>
+            </ul>
+            
+            <div>
+                <h2><a name="fiche" id="fiche" class="titre_fiche_desc">Description de l’ordinateur Acer Ultra E527-902G25MN</a></h2>  
+				<p class="text_intro">Ardeo, mihi credite, Patres conscripti (id quod vosmet de me existimatis et facitis ipsi) incredibili quodam amore patriae, qui me amor et subvenire olim impendentibus periculis maximis cum dimicatione capitis, et rursum, cum omnia tela undique esse intenta in patriam viderem, subire coegit atque excipere unum pro universis. Hic me meus in rem publicam animus pristinus ac perennis cum C. Caesare reducit, reconciliat, restituit in gratiam.</p>
+				<div class="table">
+                	
+                    <table class="tableau_fiche_complete">
+                    	<thead>
+                        	<tr>
+                            	<th colspan="2" class="title">Caractéristiques système</th>
+                            </tr>
+                        </thead>
+                    	<tbody>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Processeur</td>
+                                <td>Intel Celeron 900</td>
+                            </tr>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Mémoire vive (Mo)</td>
+                                <td>2048e</td>
+                            </tr>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Disque dur (Go)</td>
+                                <td>250</td>
+                            </tr>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Système d'exploitation</td>
+                                <td>Windows 7 Home Premium copie</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <table class="tableau_fiche_complete">
+                    	<thead>
+                        	<tr>
+                            	<th colspan="2" class="title">Caractéristiques système</th>
+                            </tr>
+                        </thead>
+                    	<tbody>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Processeur</td>
+                                <td>Intel Celeron 900</td>
+                            </tr>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Mémoire vive (Mo)</td>
+                                <td>2048e</td>
+                            </tr>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Disque dur (Go)</td>
+                                <td>250</td>
+                            </tr>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Système d'exploitation</td>
+                                <td>Windows 7 Home Premium copie</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <table class="tableau_fiche_complete">
+                    	<thead>
+                        	<tr>
+                            	<th colspan="2" class="title">Caractéristiques système</th>
+                            </tr>
+                        </thead>
+                    	<tbody>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Processeur</td>
+                                <td>Intel Celeron 900</td>
+                            </tr>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Mémoire vive (Mo)</td>
+                                <td>2048e</td>
+                            </tr>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Disque dur (Go)</td>
+                                <td>250</td>
+                            </tr>
+                        	<tr>
+                            	<td class="tab_complete_maitre">Système d'exploitation</td>
+                                <td>Windows 7 Home Premium copie</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+				<div class="clear"></div>
+            </div>
+            <div>
+                <h2><a name="voir" id="voir" class="titre_fiche_desc">Voir toutes les offres</a></h2>
+                <p class="text_intro">DOMtab is a JavaScript that turns a list of links connected to content
+                sections into a tab interface. The script removes any "back to top" links 
+                in the section and automatically hides all but the first one when the 
+                page is loaded. You can use as many tabbed menus on the page as you want 
+                to.</p>
+                <div class="clear"></div>
+            </div>
+		</div>
+        
+        
+    </div>
+    
+	<div id="footer">
+    </div>
+    
+</body>
+</html>

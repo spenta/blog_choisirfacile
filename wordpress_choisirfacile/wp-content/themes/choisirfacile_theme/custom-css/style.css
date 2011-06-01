@@ -1,0 +1,296 @@
+/*
+Theme Name : Choisir facile
+Version : 1.0 (29 avril. 2011)
+*/
+
+@import "css/reset.css";
+
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	margin-top:-20px;
+	padding:0;
+	width:100%;
+	font-size:13px;
+	background: url(../images/background_index.jpg) repeat-x #ffffff;
+	font-family:Arial, Helvetica, sans-serif
+}
+
+#page{
+	background:none !important;
+}
+
+/***************** Style du header *******************/
+#header{
+	height:68px;
+	width:100%;
+	background-image:url("../images/fond_menu.png");
+	background-repeat:repeat-x;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+/***************** /Fin style du header *******************/
+
+
+/*************** Style de la page *******************/
+#contenu{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*************** /Fin style bloc de la page *******************/
+
+/*************** Style bloc du haut *******************/
+
+div#haut{
+	height:535px;
+	width:960px;
+}
+
+/** Style titre haut **/
+
+div#titre{
+	position:relative;
+	height:50px;
+	width:960px;	
+}
+
+div#titre p{
+	margin:0;
+	padding:0;
+	width:100%;
+	position:absolute;	
+	bottom:0;
+	color:#ffffff;
+	text-align:center;
+	font-size:16px;
+}
+
+/** Style bannière avec images et textes **/
+
+div#banniere{
+	margin-top:32px;
+	height:297px;
+	width:960px;
+}
+
+div#images{
+	height:297px;
+	width:234px;
+	float:left;
+}
+
+.image_1{
+	margin-right:128px;
+}
+
+.image_2{
+	margin-right:130px;
+}
+
+#image{
+	width:234px;
+	height:216px;
+}
+
+#information img{
+	float:left;
+	height:48px;
+	width:48px;
+}
+
+#information p{
+	position:relative;
+	display:table-cell;
+	height:48px;
+	width:186px;
+	padding-left:20px;
+	vertical-align:middle;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:17px;
+	text-shadow:0 1px 1px #bbbbbb;
+}
+
+#sous_information{
+	clear:both;
+	padding-top:10px;
+	padding-left:5px;
+	color:#FFFFFF;
+	font-style:italic;
+	font-size:13px;
+}
+
+#separateur{
+	background-image:url("../images/separateur.png");
+	height:27px;
+	width:960px;
+}
+
+/** Style bouton **/
+
+#bouton{
+	position:relative;
+	top:23px;
+	background-image:url("../images/bouton_accueil.png");
+	height:80px;
+	width:225px;
+	margin:auto;
+}
+
+#bouton:hover{
+	background-position: bottom right;
+	width:225px;
+	height:80px;
+	outline:none;
+}
+
+#bouton p{
+	position:relative;
+	margin-top:-10px;
+	text-align:center;
+	font-size:21px;
+	font-weight:bold;
+}
+
+#bouton a{
+	display:table-cell;
+	vertical-align:middle;
+	text-decoration:none;
+	height:80px;
+	width:225px;
+	color:#555555;
+}
+
+#bouton a:hover{
+	color:#666666;
+}
+
+/*************** /Fin style bloc du haut *******************/
+
+/*************** Style bloc du bas *******************/
+
+#bas{
+	height:476px;
+	width:960px;
+	background-color:#FFFFFF;
+}
+
+#bas a{
+	text-decoration:none;
+	color:#50a5d7;
+	font-size:12px;
+}
+
+#bas a:hover{
+	text-decoration:underline;
+}
+
+/** Style des 3 blocs du haut **/
+
+#bloc_du_haut{
+	height:189px;
+	width:960px;
+	margin-top:17px;
+	margin-bottom:41px;
+}
+
+#bloc_3{
+	float:left;
+	height:189px;
+	width:300px;
+}
+
+#bloc_3.bloc_avec_fond{
+	background-image:url("../images/fond_home.png");
+	background-repeat:no-repeat;
+	height:189px;
+	width:300px;
+}
+
+#bloc_3.bloc_sans_fond{
+	background:none;
+	height:189px;
+	width:300px;
+}
+
+#bloc_3 h1{
+	position:relative;
+	padding-top:25px;
+	font-size:20px;
+	color:#50a5d7;
+	height:20px;
+	width:300px;
+	text-align:center;
+	text-shadow:0 2px 2px #c3e4f8;
+}
+
+#bloc_3 p{
+	position:relative;
+	padding-top:22px;
+	margin-left:35px;
+	margin-right:36px;
+	font-size:12px;
+	text-align:justify;
+}
+
+#separateur_bloc{
+	float:left;
+	background:none;
+	height:189px;
+	width:30px
+}
+
+#bloc_du_bas{
+	height:167px;
+	width:960px;
+}
+
+/** Style des 2 blocs du bas **/
+
+#bloc_2{
+	float:left;
+	height:167px;
+	width:475px;
+}
+
+#separateur_bloc_2{
+	float:left;
+	height:167px;
+	width:1px;
+	border-right:1px solid #000000;
+}
+
+#image_bloc_2{
+	float:left;
+	height:190px;
+	width:227px;
+}
+
+#content_bloc_2{
+	float:left;
+	height:167px;
+	width:200px;
+	padding-top:9px;
+}
+
+#content_bloc_2 h1{
+	position:relative;
+	color:#2b86bb;
+	font-size:17px;
+	height:17px;
+	width:267px;
+	text-shadow:0 2px 2px #c3e4f8;
+}
+
+#content_bloc_2 p{
+	margin-top:30px;
+	font-size:14px;
+	text-align:justify;
+}
+
+/*************** /Fin style bloc du bas *******************/

@@ -1,0 +1,459 @@
+/*
+Theme Name : Choisir facile
+Version : 1.0 (29 avril. 2011)
+*/
+
+@import "css/reset.css";
+
+/*body*/
+
+body,html{
+	margin:0;
+	margin-top:-10px;
+	padding:0;
+	width:100%;
+	font-size:13px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*content*/
+
+#content{
+	width:100%;
+}
+
+/*content_top*/
+
+#top{
+	position:relative;
+	height:358px;
+	width:100%;
+	background-color:#50a5d7;
+}
+
+#top .content{
+	position:relative;
+	width:960px;
+	height:358px;
+	margin:auto;
+}
+
+#top .gauche{
+	position:relative;
+	float:left;
+	height:358px;
+	width:318px;
+}
+
+#top .gauche h1{
+	margin-top:20px;
+	margin-bottom:20px;
+	font-size:22px;
+	font-weight:bold; 
+}
+
+#top .gauche h1 a{
+	text-decoration:none;
+	color:white;
+}
+
+.score_image img{
+	position:absolute;
+	top:65px;
+	right:25px;
+	height:74px;
+	width:69px;
+}
+
+#top .droite{
+	float:right;
+	height:358px;
+	width:602px;
+}
+
+.droite .haut.avec_fond{
+	background-image:url("images/separateur_droite_top.png");
+	background-repeat:no-repeat;
+	background-position:bottom;
+	height:60px;
+	width:602px;
+	margin-bottom:5px;
+}
+
+.droite .haut.sans_fond{
+	height:60px;
+	width:602px
+}
+
+#top .top{
+	text-align:right;
+	margin-top:20px;
+	color:#ffffff;
+}
+
+#top .top div.texte span{
+	position:relative;
+	top:-5px;
+}
+
+#top .top .bouton{
+	position:relative;
+	margin-top:-20px;
+	margin-left:10px;
+	background-image:url("images/bouton_page.png");
+	text-align:center;
+	height:86px;
+	width:172px;
+	float:right;
+}
+
+#top .top .bouton a.icone{
+	position:relative;
+	top:20px;
+	right:5px;
+	text-decoration:none;
+	color:#000000;
+	font-size:16px;
+}
+
+#top .bottom{
+	margin-top:0px;
+	clear:both;
+}
+
+h2.titre{
+	color:#ffffff;
+	font-size:18px;
+}
+
+.bas{
+	float:left;
+	text-align:left;
+	margin-bottom:15px;
+}
+
+p.soustitre{
+	color:#ffffff;
+	font-size:12px;
+	margin-top:10px;
+}
+
+#top .bottom .bloc_config_haut{
+	width:602px;
+	height:175px;
+	margin-top:20px;
+}
+
+/*end content_top*/
+
+/*content_bottom*/
+
+#bottom{
+	position:relative;
+	width:100%;
+	height:auto !important;
+	height:10px;
+	min-height:10px;
+	background-color:#fff;
+}
+
+#bottom .content{
+	position:relative;
+	width:960px;
+	background-color:#ffffff;
+	margin:auto;
+}
+
+#bottom .banner_top{
+	margin-top:5px;	
+}
+
+#bottom .banner_top h3{
+	color:#50a5d7;
+	font-size:14.5px;
+	font-weight:bold;
+}
+
+#bottom .banner_top .bloc{
+	position:relative;
+	float:left;
+	margin:0;
+	margin-top:10px;
+	background-image:url("images/fond_bloc_page.png");
+	width:168px;
+	height:157px;
+	z-index:1;
+}
+#bottom .banner_top .separation{
+	position:relative;
+	float:left;
+	width:30px;
+	height:157px;
+}
+
+#bottom .img{
+	position:relative;
+	margin:5px;
+	z-index:2;
+}
+
+#bottom .img .img_1{
+	float:left;
+}
+
+#bottom .img .img_2{
+	float:right;
+}
+
+#bottom .bloc{
+	position:relative;
+	z-index:2;
+}
+
+#bottom .bloc p.prix{
+	position:relative;
+	text-align:center;
+	top:20px;
+	left:37px;
+	font-size:24px;
+	font-weight:bold;
+}
+
+#bottom .bloc .bouton{
+	position:relative;
+	margin-top:30px;
+	background-image:url("images/acheter.png");
+	background-repeat:no-repeat;
+	background-position:center;
+	height:28px;
+	width:168px;
+}
+
+#bottom .bloc .bouton a{
+	position:relative;
+	top:8px;
+	height:28px;
+	width:168px;
+	margin-left:62px;
+	text-decoration:none;
+	color:#ffffff;
+}
+
+/*end content_bottom*/
+/*fin content*/
+/*menu tabs*/
+
+#id_container .container .clear{  
+	clear: both;  
+	height: 0;  
+	visibility: hidden;  
+	display: block;  
+}  
+/******* GENERAL RESET *******/
+#id_container .container{
+	position:relative;
+	top:20px;
+}
+/******* MENU *******/  
+#id_container .container ul{  
+	list-style: none;  
+	list-style-position: outside;
+}
+
+ul.menu_bottom li{
+	font-weight: 700;
+	display:inline;
+	padding: 5px 10px 5px 10px;
+	margin-right:10px;
+	background: #5ba4d0;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#5ba4d0), to(#036ba9));
+	background: -moz-linear-gradient(#5ba4d0, #036ba9);
+	background: linear-gradient(#5ba4d0, #036ba9);
+	margin-bottom: -1px;  
+	position: relative;  
+	color: #ffffff;
+	cursor: pointer;
+	-moz-border-radius:8px 8px 0 0;
+	-webkit-border-radius:8px 8px 0 0;
+	-khtml-border-radius:8px 8px 0 0;
+	border-radius:8px 8px 0 0;
+	border:1px solid #046ba9;
+	behavior:url(wp-content/themes/choisirfacile_theme/css/css3_ie/PIE.htc);
+}
+
+ul.menu_bottom li:hover{
+	background: #c3e4f8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#c3e4f8), to(#4f9dcb));
+	background: -moz-linear-gradient(#c3e4f8, #4f9dcb);
+	background: linear-gradient(#c3e4f8, #4f9dcb);
+}
+
+ul.menu_bottom .active{
+	background: #c3e4f8;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#c3e4f8), to(#4f9dcb));
+	background: -moz-linear-gradient(#c3e4f8, #4f9dcb);
+	background: linear-gradient(#c3e4f8, #4f9dcb);
+}
+
+ul.menu_bottom li a{
+	position:relative;
+	top:-3px;
+	text-decoration:none;
+	color:white;
+}
+/******* /MENU *******/  
+/******* CONTENT *******/  
+#id_container .container .content{  
+	margin: 0pt auto;  
+	background: #efefef;  
+	background: #fff;  
+	border: 1px solid #50a5d7;  
+	text-align: left;  
+	padding-bottom: 20px;  
+	font-size: 11px;  
+}  
+/******* /CONTENT *******/  
+#id_container .container .content h2{  
+	color:#50a5d7;
+	font-size:16px;
+	padding:10px;
+}
+#id_container .container .content div.text_intro{
+	margin-top:10px;
+	text-align:justify;
+	font-size:12px;
+	padding:10px;
+}
+#id_container .container .content{  
+	display: block;
+	height:auto!important;
+	height:5px;
+	width:960px;
+	min-height:5px;
+}
+/*fin menu tabs*/
+/* bloc_config_haut"*/
+
+.bloc_config_haut table{
+	border:1px dotted #000000;
+	background-color:#ffffff;
+	width:602px;
+}
+
+.bloc_config_haut table tr{
+	border:1px dotted #000000;
+}
+
+.bloc_config_haut table tr td{
+	border:1px dotted #000000;
+	padding:5px;
+}
+
+.bloc_config_haut table tr th{
+	text-align:left;
+	padding:5px;
+	border:1px dotted #000000;
+}
+
+.bloc_config_haut table tr th div.texte{
+	float:left;
+}
+
+.bloc_config_haut table tr th div.bulle{
+	float:right;
+}
+
+/* bloc_config_haut */
+
+.content.fiche table{
+	width:430px;
+}
+
+.content.fiche table.gauche{
+	margin:10px;
+	float:left;
+}
+
+.content.fiche table.droite{
+	margin:10px;
+	float:right;
+}
+
+.content.fiche table tr th.title{
+	text-align:center;
+	padding:10px;
+	background-color:#50a5d7;
+	border:1px dotted #000000;
+	color:#ffffff;
+	font-size:12px;
+}
+
+.content.fiche table tr th{
+	padding:10px;
+	font-size:13px;
+	border-left:1px dotted #000000;/* pour IE 7/8 */
+	border-bottom:1px dotted #000000;/* pour IE 7/8 */
+}
+
+.content.fiche table tr td{
+	border:1px dotted #000000;
+	padding:10px;
+	font-size:12px;
+}
+
+/*infobulle*/
+
+a.tooltip em {
+    display:none;
+}
+a.tooltip:hover {
+	border: 0;
+    position: relative;
+    z-index: 500;
+    text-decoration:none;
+}
+a.tooltip:hover em {
+    font-style: normal;
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -10px;
+    padding: 5px;
+    color: #000;
+    border: 1px solid #bbb;
+    background: #ffc;
+    width:170px;
+}
+a.tooltip:hover em span {
+    position: absolute;
+    top: 23px;
+    left: 13px;
+    height: 7px;
+    width: 11px;
+    background-image: url("images/infobulleimg.png");
+    border: 0;
+	z-index:10;
+
+}
+/*fin infobulle */
+
+.partage{
+	position:relative;
+	top:10px;
+	right:5px;
+	color:#ffffff;
+	float:right;
+}
+
+.partager ul{
+}
+
+.partage ul li{
+	float:left;
+	margin-right:5px;
+}
+
+.partage ul li > p{
+	font-size:12px;
+	font-weight:bold
+}

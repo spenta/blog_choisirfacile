@@ -1,0 +1,494 @@
+/*
+Theme Name: PalutonisMagazine
+Theme URI: http://www.simplewpthemes.com
+Version: 1.0
+Author: sin2384
+Author URI: http://www.simplewpthemes.com
+Description: Free Wordpress theme by <a href="http://www.simplewpthemes.com/">SimpleWPThemes.com</a>. Please read READ ME.TXT for usage instructions!
+*/
+@import url("css/comments.css");
+@import url("css/reset.css");
+@import url("css/slide.css");
+@import url("css/featuredcats.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+/***************LINKS*************************/
+
+a:link, a:visited {
+  color: #5a7c00;
+  text-decoration: none;
+}
+a:hover {
+  color: #0f1500;
+}
+/***************END LINKS*************************/
+
+html body {
+  background: #f8f8f5 url(images/bg.gif) repeat-x scroll top;
+  font-size: 13px;
+  font-family: Arial, Verdana, Tahoma, Times New Roman;
+  line-height: 1.5em;
+  color: #9d9c9d;
+}
+
+/***************LAYOUT*************************/
+
+#mainwrap {
+  margin: 0 auto;
+  width: 960px;
+}
+#header {
+  width: 960px;
+  height: 95px;
+  padding-top: 40px;
+}
+#blogtitle {
+  text-transform: uppercase;
+  float: left;
+}
+.description {
+  color: #9d9c9d;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+.adv {
+  float: right;
+  margin: -2px 0px 0 0;
+}
+
+/* -------- START CATEGORY MENU -------- */
+#nav2 {
+  clear: both;
+  height: 43px;
+  margin-bottom: 35px;
+  width: 960px;
+  border-top: 1px solid #5a7c00;
+  border-bottom: 1px solid #5a7c00;
+}
+#nav2 li {
+  float: left;
+  line-height: 41px;
+}
+#nav2 li a {
+  float: left;
+  display: block;
+  color: #5a7c00;
+  text-decoration: none;
+  padding: 0px;
+  font-size: 11px;
+  margin-right: 35px;
+}
+#nav2 li.current-cat a, #nav2 a:hover {
+  color: #0f1500;
+}
+#nav2 li li {
+  display: none;
+}
+
+/* -------- END CATEGORY MENU -------- */
+
+
+/* -------- START PAGE MENU -------- */
+
+#top {
+  clear: both;
+  width: 960px;
+  height: 43px;
+}
+#top li {
+  float: left;
+  line-height: 43px;
+}
+#top li a {
+  float: left;
+  display: block;
+  padding: 0px;
+  color: #f8f8f5;
+  font-size: 11px;
+  margin-right: 35px;
+}
+#top li.current_page_item a, #top li a:hover {
+  color: #b5fa00;
+}
+#top li li {
+  display: none;
+}
+/* -------- END PAGE MENU -------- */
+
+#s {
+  width: 206px;
+  padding: 10px 0 5px 5px;
+  height: 18px;
+  margin-bottom: 5px;
+  color: #bbbbbb;
+  font-size: 11px;
+  border: 1px solid #d8d8d8;
+}
+*+html #s {
+  padding: 10px 0 5px 5px;
+  margin-top: -1px;
+}
+#contentwrap {
+  float: left;
+  width: 688px;
+  position: relative;
+  left: -13px;
+  margin-bottom: 30px;
+}
+#contentwraps {
+  float: left;
+  width: 688px;
+  position: relative;
+  left: -23px;
+  margin-bottom: 30px;
+}
+#sidebar {
+  float: right;
+  width: 272px;
+  margin-bottom: 30px;
+}
+*+html #sidebar2w {
+  margin-top: 30px;
+}
+#sidebar2w {
+  width: 100%;
+  background: #5a7c00;
+  padding-bottom: 28px;
+  overflow: hidden;
+}
+#sidebar2 {
+  width: 960px;
+  margin: 0 auto;
+  padding: 40px 0 0;
+  overflow: hidden;
+  font-size: 12px;
+}
+#footer1, #footer2, #footer3 {
+  width: 190px;
+  float: left;
+  margin-right: 65px;
+}
+#footer4 {
+  margin-right: 0;
+  float: left;
+  width: 190px;
+}
+#sidebar2 h3 {
+  color: #f0eee9;
+  font-size: 22px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.widget {
+  margin-bottom: 45px;
+  overflow: hidden;
+}
+.widget a, .widget a:visited {
+  color: #f6f6f3;
+}
+.widget a:hover {
+  color: #b5fa00;
+  text-decoration: underline;
+}
+.widget ul li {
+  padding: 8px 0 8px 0px;
+  margin-left: 0;
+  border-bottom: 1px solid #476100;
+}
+.widget li li {
+  border-bottom: 0 !important;
+  border-top: 1px solid #476100;
+}
+.widget ul.children {
+  margin: 7px 0 -7px 0;
+}
+
+/* -------- ADVERT -------- */
+
+.add1 {
+  clear: both;
+  float: left;
+  margin: 0 0  10px 5px;
+  display: inline;
+}
+.add2 {
+  float: right;
+  margin: 0 5px 10px 0;
+  display: inline;
+}
+
+/* -------- END ADVERT -------- */
+
+.custom_images img {
+  margin: 0 3px 0 0;
+  padding: 0;
+}
+
+#footer {
+  width: 960px;
+  clear: both;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+  font-size: 11px;
+  color: #9d9c9d;
+}
+#footer a, #footer a:visited {
+  color: #0f1500;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+/* -------- END WP LAYOUT -------- */
+
+/* -------- START WP STYLES -------- */
+
+#sidebar h3 {
+  padding: 0 0 15px 0;
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #5a7c00;
+  text-transform: capitalize;
+  border-bottom: 1px solid #d8d8d8;
+}
+.side-widget {
+  clear: both;
+  width: 272px;
+  padding: 0;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+#sidebar ul {
+  margin-top: -5px;
+}
+#sidebar ul.children {
+  margin: 6px 0 -6px 0;
+}
+#sidebar ul li {
+  padding: 6px 0 6px 15px;
+  margin-left: 0;
+  border-bottom: 1px solid #c7c7c6;
+  background: url(images/arrow.png) no-repeat scroll 0 12px;
+}
+#sidebar li.recentcomments {
+  padding-left: 15px !important;
+}
+#sidebar li li {
+  border-bottom: 0;
+  border-top: 1px solid #c7c7c6;
+}
+.side-widget a, .side-widget a:visited {
+  color: #9d9c9d;
+}
+.side-widget a:hover {
+  color: #0f1500;
+  text-decoration: underline;
+}
+.textwidget {
+  padding: 5px;
+}
+.side-widget div {
+  padding: 5px 0;
+}
+/***************POST STYLES*************************/
+h2.title {
+  margin-bottom:20px;
+  line-height: 26px;
+  font-size: 26px;
+}
+h2.title a, h2.title a:visited {
+  color: #5a7c00;
+}
+.time {
+  position: relative;
+  left: -37px;
+  display: block;
+  background: url(images/time.png) no-repeat;
+  width: 78px;
+  padding-left: 30px;
+  height: 31px;
+  padding-top: 3px;
+  font-size: 10px;
+  color: #fff;
+  margin-top: 35px !important;
+  margin-bottom: -50px;
+}
+.year {
+  color: #b5fa00;
+}
+a.more-link {
+  color: #0f1500;
+  text-decoration: underline;
+  font-size: 11px;
+}
+.postmetadata {
+  margin-top: 15px;
+}
+.post, .page {
+  width: 587px;
+  border: 1px solid #d8d8d8;
+  border-bottom: 0;
+  background: #fff;
+  margin: 0 0 0 23px;
+  padding: 30px 25px 0 25px;
+  position: relative;
+}
+.post-bot {
+  background: url(images/post-bot.png) no-repeat;
+  height: 100px;
+  width: 688px;
+}
+.inn {
+  width: 637px;
+  margin-left: 25px;
+}
+.entry {
+  margin-top: 0px;
+  line-height: 22px;
+  overflow: hidden;
+}
+.entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
+  margin-bottom: 15px;
+}
+.entry h2 {
+  margin-bottom: 0.4em;
+}
+.entry p {
+  margin-bottom: 10px;
+}
+.entry img, .post_thumbnail {
+  padding: 0px;
+  border: 0;
+}
+.entry th {
+  padding: 0;
+  margin-right: 2px;
+}
+.entry li {
+  list-style: circle inside;
+}
+.entry ol li {
+  list-style: decimal inside;
+}
+blockquote {
+  border-left: 10px solid #666666;
+  margin-left: 20px;
+}
+blockquote p {
+  padding: 10px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 10px 0px 0px;
+}
+.alignright {
+  float: right;
+  margin: 5px 0px 0px 10px;
+}
+img.aligncenter {
+  display: block;
+  margin: 0 auto 5px;
+}
+/***************END POST STYLES*************************/
+#calendar_wrap {
+  text-align: center;
+}
+#wp-calendar caption {
+  background: #5a7c00;
+  color: #fff;
+  width: 100%;
+}
+#wp-calendar th {
+  padding: 14px;
+}
+#wp-calendar td a:link, td#prev a, td#next a {
+  background: #5a7c00;
+  padding: 1px 6px;
+  color: #fff;
+  line-height: 29px;
+}
+li.pagenav, li.categories, li.linkcat {
+  list-style:none;
+}
+h2.pagetitle {
+  margin: 0 0 20px 0px;
+  font-size: 32px;
+  text-align: center;
+  color: #000;
+}
+p.center {
+  margin: 10px 0;
+}
+/* -------- END WP STYLES -------- */
+
+
+
+/* -------- TABLES -------- */
+#contentwrap table{font-size:1.2em;margin:5px 0 25px 1px;}
+#contentwrap table td{padding:8px;border: 1px solid #ccc;}
+/* -------- END TABLES -------- */
+
+
+/* -------- PAGE NAVIGATION -------- */
+
+.wp-pagenavi{
+  clear:both;
+  margin:0px 0 20px 22px;
+}
+.wp-pagenavi span.pages,.wp-pagenavi span.extend{
+  background:#fff;
+  border:1px solid #d8d8d8;
+  color:#9d9c9d;
+  margin:2px;
+  padding:3px 7px;
+}
+.wp-pagenavi a,.wp-pagenavi a:link,.wp-pagenavi a:visited{
+  background:#fff;
+  border:1px solid #d8d8d8;
+  color:#9d9c9d;
+  margin:2px;
+  padding:3px 7px;
+  text-decoration:none;}
+.wp-pagenavi span.current,.wp-pagenavi a:hover{
+  background:#fff;
+  border:1px solid #acacac;
+  color:#9d9c9d;
+  margin:2px;
+  padding:3px 7px;
+}
+/* -------- END PAGE NAVIGATION -------- */
+
+/* -------- SUBSCRIPTION -------- */
+ul#topsoc {
+  margin-top: -5px;
+}
+ul#topsoc li {
+  line-height: 50px !important;
+  padding: 0 !important;
+  border-bottom: 0 !important;
+}
+ul#topsoc li a {
+  padding: 32px 0px 32px 43px !important;
+  margin: 0;
+}
+a#twitter {
+  background: url(images/twitter.png) no-repeat scroll 0px 24px !important;
+}
+a#socrss {
+  background:url(images/rss.png) no-repeat scroll 0px 24px !important;
+}
+a#email {
+  background: url(images/email.png) no-repeat scroll 0px 24px !important;
+}
+a#fb {
+  background: url(images/facebook.png) no-repeat scroll 0px 24px !important;
+}
+/* -------- END SUBSCRIPTION -------- */
+.flickr_badge_image { float: left; margin-bottom: 10px; }
+.flickr_badge_image img { width: 54px; height: 47px; padding: 0px; margin: 0 10px 0px 0; border: 1px solid #2b3b00;   float: left; }
+#flickr_badge_image3 img, #flickr_badge_image6 img, #flickr_badge_image9 img, #flickr_badge_image12 img {
+  margin-right: 0;
+}

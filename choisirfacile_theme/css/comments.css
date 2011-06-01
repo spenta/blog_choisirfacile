@@ -1,0 +1,35 @@
+#commentform a, #commentform small {
+    color: #5E5E5E;
+}
+#commentform input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C7C7C6;
+    color: #000000;
+    font-size: 12px;
+    padding: 4px;
+}
+#commentform textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C7C7C6;
+    color: #000000;
+    font-size: 12px;
+    width: 100%;
+}
+#commentform input#submit {
+    background: none repeat scroll 0 0 #494949;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+}
+.comment-author img {
+    float: left;
+    margin-right: 10px;
+}
+.comment-author {
+    margin-bottom: 10px;
+}
+h3#pings {
+    margin: 10px 0;
+}
+.pinglist {
+    line-height: 20px;
+}

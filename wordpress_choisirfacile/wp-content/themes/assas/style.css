@@ -1,0 +1,667 @@
+/*
+THEME NAME: Assas
+THEME URI: http://www.fwpmt.com
+DESCRIPTION: Assas is a clean wordpress theme suitable for company, corporate and business sites. Coming with featured posts option and theme options page. 
+VERSION: 1.0
+AUTHOR: Toan Nguyen Minh
+AUTHOR URI: http://www.fwpmt.com
+*/
+@import "reset.css";
+@font-face {
+ 	font-family: 'League Gothic Regular';
+ 	src: url("font/league_gothic.eot");
+}
+@font-face {
+ 	font-family: 'League Gothic Regular';
+ 	src: url("font/league_gothic.ttf");
+}
+body {
+	background: #fff;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #585858;
+	min-width: 980px;
+}
+html, body {
+	height: 100%;
+}
+
+h2 { text-transform: uppercase;
+	font-size: 300%;
+	line-height: 1.2;
+	font-weight: normal;
+	font-family: 'League Gothic Regular', Helvetica, Arial, sans-serif;
+}
+
+h3 { text-transform: uppercase;
+	font-size: 250%;
+	line-height: 1;
+	font-weight: normal;
+	font-family: 'League Gothic Regular', Helvetica, Arial, sans-serif;
+}
+
+h4 { text-transform: uppercase;
+	font-size: 200%;
+	line-height: 0.8;
+	font-weight: normal;
+	font-family: 'League Gothic Regular', Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #105f8b;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+strong {
+	font-weight: 700;
+}
+
+a.more-link{padding:5px 7px 5px 7px; background:#105f8b; color:#fff; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; font-size:10px; text-transform:uppercase;float:left;}
+a.more-link:hover {padding:5px 7px 5px 7px; background:#064467; color:#fff; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; font-size:10px; text-transform:uppercase;float:left;}
+
+hr {
+	border: none 0;
+	border-bottom: 1px solid #E0E0E0;
+	height: 1px;
+	margin: 10px 0;
+}
+blockquote {
+	font-style: italic;
+	background: url(images/quotes.gif) no-repeat top left;
+	background-position: 12px 12px;
+	color: #595959;
+	margin: 5px 0;
+	padding: 8px 15px 8px 60px;
+}
+
+
+#container-bottom{ background-image:url(images/container_bottom.gif); background-repeat:repeat-x; background-color:#1c140f}
+
+
+#top_bg {
+	height: 57px;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	background: #2e2e2e;
+}
+#topline_bg {
+	height: 1px;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	background: url("images/topline_bg.png");
+	top: 57px;
+}
+#header_bg {
+	height: 405px;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	background: url("images/header_bg2.png") 50% 0% repeat-x;
+	top: 57px;
+}
+#container_bg {
+	height: 81px;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	background: #fff url("images/container_bg.png") 0px 1px repeat-x;
+	top: 462px;
+}
+#slider {
+	z-index: 5;
+	width: 100%;
+	height: 360px;
+	position: relative;
+}
+#slider img {
+	display: none;
+}
+#slider_shadow{
+	z-index: 2;
+	position: absolute;
+	background: url("images/slider-shadow.png") 50% 0% no-repeat;
+	height: 96px;
+	width: 100%;
+	top: 490px;
+	left: 0px;
+}
+#fullwrapper {
+	z-index: 2;
+	position: relative;
+	width: 100%;
+	
+}
+#wrapper {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 57px 0 30px 0;
+}
+#header {
+	z-index: 5;
+	position: relative;
+	overflow: hidden;
+	width: 960px;
+	height: auto;
+	margin: 0 auto;
+	
+}
+#header-spacer {
+	display: inline-block;
+	margin: 50px 0 0px 0;
+	height: 2px;
+	width: 100%;
+	background: url("images/spacer.png") 25px 0px no-repeat;
+}
+#subheader {
+	width: 100%;
+	margin: 30px 0 0 0;
+	height: 100px;
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+#ads468 {
+	float: right;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	height: auto;
+	width: auto;
+}
+
+#logo-img {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	float: left
+}
+#logo-text {
+	display: inline-block;
+	float: left;
+}
+#logo {
+	font-size: 400%;
+	font-family: League Gothic Regular, Helvetica, Arial, sans-serif;
+	line-height: 0.8em;
+	text-transform: uppercase;
+	vertical-align: bottom;
+}
+#logo a {
+	color: #fff;
+}
+#logo a:hover {
+	text-decoration:none;
+}
+#description {
+	font-size: 200%;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: League Gothic Regular, Helvetica, Arial, sans-serif;
+	vertical-align: bottom;
+}
+#menu { 
+	width: 960px;
+	height: 47px;
+	display: inline-block;
+	position: absolute;
+	top: 3px;
+	z-index: 10;
+	text-align:right;
+}
+#menu ul {
+	width: 960px;
+	height: 47px;
+	margin: 10px 0 0 0;
+	color: #fff;
+	display: inline-block;
+}
+#menu ul li {
+	float: left;
+	text-transform: uppercase;
+	font-size: 90%;
+	height: 35px;
+	display: inline-block;
+	position: relative;
+	z-index: 10;
+	width: auto;
+}
+#menu ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+}
+#menu ul li a:hover {
+	color: #fff;
+	text-decoration: underline;
+	background: #000;
+}
+#menu ul li ul {
+	display: none;
+	position: absolute;
+	width: 200px;
+	top: 15px;
+	height: auto;
+}
+#menu .menubg {
+	background: #000;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	top:0px;
+	left:0px;
+}
+/*#menu ul li:hover ul {
+	display: block;
+	z-index: 10;
+}*/
+#menu ul li ul li {
+	clear: both;
+	height: auto;
+	width: 100%;
+	z-index: 5;
+}
+#menu ul li:hover ul li a, #menu ul li ul li a {
+	color: #fff;
+	padding: 10px;
+	display: block;
+	border-bottom: #000 1px solid;
+}
+#container {
+	width: 960px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 10px 20px;
+	background: #fff;
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	background: url(images/container.png) repeat top left;
+}
+#content {
+	float: left;
+	width: 590px;
+	padding: 5px 0 0 0;
+}
+
+.grid_3 p {
+    margin: 20px 0 15px 0;
+	font-family: Georgia,Times,serif;
+	font-style: italic;
+	font-size: 13px;
+	line-height : 20px;
+}
+
+.post-spacer {
+	display: block;
+	height: 1px;
+	width: 100%;
+	margin: 25px 0 25px 0;
+}
+.top-meta {
+	width: 590px;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+.title-container {
+	width: 520px;
+	display: inline-block;
+	float: left;
+}
+.tweetmeme_button {
+	width: 60px;
+	float: right; 
+	display: inline-block;
+	text-align: right;
+	margin: 6px 0 0 0;
+}
+.post-title {
+    text-transform: uppercase;
+	font-size: 300%;
+	line-height: 1.2;
+	font-weight: normal;
+	font-family: 'League Gothic Regular', Helvetica, Arial, sans-serif;
+}
+.post-title a {
+	color: #105f8b;
+}
+.post-title a:hover {
+	color: #064467;
+	text-decoration: none;
+}
+.post-title a:active {
+	color: #105f8b;
+}
+.page-subtitle {
+	font-weight: 700;
+	color: #CCC;
+	font-size: 90%;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #EFEFEF;
+	margin-bottom: 15px;
+}
+.post-meta {
+	font-size: 85%;
+	color: #999;
+	margin: 5px 0 20px 0;
+	line-height: 1.3;
+}
+.post-meta a {
+	color: #105f8b;
+}
+.post-comments {
+	float: right;
+	background: url(images/cbubble_left.gif) no-repeat top left;
+	padding: 3px 0 7px 7px;
+}
+.post-comments a {
+	background: url(images/cbubble_right.gif) no-repeat top right;
+	padding: 3px 7px 7px 0;
+	color: #FFFFFF;
+}
+.post-comments a:hover {
+	color: #FFFFFF;
+}
+.post-content {
+	margin: 15px 0 15px 0;
+}
+.post-content h1 {
+	font-size: 180%;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #EFEFEF;
+	padding: 10px 0 5px;
+}
+.post-content h2 {
+	font-size: 140%;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #EFEFEF;
+	padding: 10px 0 5px;
+}
+.post-content h3 {
+	font-size: 130%;
+	font-weight: 700;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #EFEFEF;
+	padding: 10px 0 5px;
+}
+.post-content p {
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+.post-title, .post-title a, .post-title a:active, .sidepanel h3, #footer-links a:hover, .comment-meta  {
+	color: #105f8b;
+}
+
+#menu ul li.current_page_item a, #menu ul li ul li.current_page_item a, #menu ul li ul li:hover a { color: #fff; text-decoration: underline; }
+ #menu ul li a:hover, #menu ul li a:active { 
+	color: #fff;
+}
+
+.front-image {
+	background: #FFF;
+	border: 1px solid #EFEFEF;
+	padding: 10px;
+	width: 568px;
+	height: auto;
+}
+.post-content img.alignnone {
+	background: #FFF;
+	border: 1px solid #EFEFEF;
+	padding: 10px;
+}
+.front-image {
+	margin: 0 0 10px 0;
+}
+.post-content img.alignleft {
+	float: left;
+	background: #FFF;
+	border: 1px solid #EFEFEF;
+	padding: 10px;
+	margin: 0 25px 15px 0;
+}
+.post-content img.alignright {
+	float: right;
+	background: #FFF;
+	border: 1px solid #EFEFEF;
+	padding: 10px;
+	margin: 0 0 15px 25px;
+}
+.post-content ul,.post-content ol {
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+.post-content ul {
+	list-style: outside;
+}
+.post-content ol {
+	list-style: decimal;
+}
+.post-content ul li,.post-content ol li {
+	line-height: 1.3;
+	margin-bottom: 5px;
+}
+
+.section-title {
+    font-size: 190%;
+    font-family: 'League Gothic Regular', Helvetica, Arial, sans-serif;
+    margin: 40px 0 10px 0;
+    text-transform: uppercase;
+}
+.navleft {
+	float: left;
+	margin: 0 15px 15px 0;
+}
+.navright {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+.navleft a, .navright a {
+	text-transform: uppercase;
+	font-family: 'League Gothic Regular', Helvetica, Arial, sans-serif;
+	color: #585858;
+}
+.navigation div a {
+	font-size: 200%;
+}
+#comments ol li {
+	margin-top: 2px;
+	border-bottom: 1px solid #F0F0F0;
+	padding: 10px 0;
+	overflow: hidden;
+	height: 1%;
+}
+.comment-gravatar {
+	float: left;
+	margin-right: 10px;
+	background: #FFF;
+	border: 1px solid #F0F0F0;
+	padding: 3px;
+}
+.comment-data {
+	float: left;
+	width: 400px;
+}
+.comment-data p {
+	margin-bottom: 6px;
+	line-height: 1.3;
+}
+.comment-author {
+	font-weight: 700;
+	margin-bottom: 3px;
+}
+.comment-meta {
+	color: #666;
+	margin-bottom: 5px;
+	font-size: 85%;
+}
+.unapproved {
+	font-style: italic;
+}
+#respond {
+	margin-top: 30px;
+}
+#respond #input {
+	font-weight: 700;
+	padding: 10px;
+	color: #fff;
+	background: #105f8b;
+	border: #731100 1px solid;
+}
+#comment-form {
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+#comment-form label {
+	font-size: 90%;
+	display: block;
+	margin-bottom: 5px;
+}
+#comment-form input {
+	width: 240px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+#comment-form textarea {
+	width: 590px;
+	height: 200px;
+	margin-top: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	padding: 10px 5px 10px 5px;
+	border: #ececec 1px solid;
+	color: #888;
+}
+#comment-form input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	padding: 10px 5px 10px 5px;
+	border: #ececec 1px solid;
+	color: #888;
+}
+#sidebar {
+	float: right;
+	width: 300px;
+	padding: 5px 0 0 0;
+}
+.sidepanel {
+	margin-bottom: 30px;
+}
+.sidepanel h3 {
+	text-transform: uppercase;
+	border-bottom: 1px solid #EFEFEF;
+	padding: 0 0 7px 0;
+	color: #105f8b;
+	font-weight: normal;
+	font-size: 220%;
+	font-family: 'League Gothic Regular', Helvetica, Arial, sans-serif;
+}
+.sidepanel ul li {
+	border-bottom: 1px solid #EFEFEF;
+	padding: 7px 0;
+	line-height: 1.2;
+}
+.sidepanel p {
+	margin-top: 8px;
+	line-height: 1.3;
+}
+.sidepanel .ads  {
+	background: #FFF;
+	border: 1px solid #EFEFEF;
+	padding: 5px;
+	width: 125px;
+	height: 125px;
+	margin: 0 10px 10px 0;
+	display: inline-block;
+}
+#searchform #s {
+	padding: 10px 5px 10px 5px;
+	border: #ececec 1px solid;
+	color: #888;
+}
+#searchform #s:focus, #sidebar #s:hover {
+	border: #ccc 1px solid;
+}
+#submit {
+	padding: 9px 7px 9px 7px;
+	color: #fff;
+	cursor: pointer;	
+}
+#sidebar #s {
+	padding: 10px 5px 10px 5px;
+	border: #ececec 1px solid;
+	color: #888;
+	width: 130px;
+}
+#sidebar #s:focus, #sidebar #s:hover {
+	border: #ccc 1px solid;
+}
+#sidebar #searchsubmit {
+	padding: 9px 7px 9px 7px;
+	color: #fff;
+	cursor: pointer;	
+}
+#sidebar #searchsubmit:hover {
+}
+#sidebar #searchsubmit:active {
+}
+
+/* footer column */
+.col1, .col2, .col3{width:30%; float:left; margin-right:5%; margin-bottom:0px !important;}
+.col3{margin-right:0 !important;}
+.col{width:100%;}
+
+/* =Footer
+-------------------------------------------------------------- */
+#bottom{background-image:url(images/container_bottom2.gif); background-repeat:repeat-x; font-size: 12px; line-height : 18px; background-position:bottom; padding: 0 0 0 30px;}
+#bottom h1, #bottom h2, #bottom h3, #bottom h4, #bottom h5, #bottom h6{color:#fff; margin: 0 0 20px 0;}
+#bottom, #bottom p{color:#fff;}
+#bottom a, #bottom a:visited{color:#fff}
+#bottom a:hover{color:#ccc;}
+#bottom ul li a, #bottom ul li a:visited{text-decoration:none; color:#fff}
+#bottom ul{list-style-type:none; margin:0px 0px 0px 0px; padding:0px;}
+#bottom ul ul{list-style-type:none; margin:0px 0px 30px 0px; padding:0px;}
+#bottom ul li ul li{background-image:url(images/double_line.gif); background-repeat:repeat-x; background-position:bottom; padding:0px 0px 5px 0px; margin-bottom:5px;}
+#bottom-glow{padding:60px 0px 30px 0px; background-image:url(images/bottom-glow.png); background-repeat:no-repeat; background-position:center 16px}
+
+#bottom ul ul.children, #bottom ul ul.sub-menu{background-image:none !important; padding:5px 0px 0px 0px; margin:0px !important}
+#bottom ul ul.children li, #bottom ul ul.sub-menu li{background-image:none !important;}
+#bottom ul ul.children li, #bottom ul ul.sub-menu li{padding-left:10px; border:0px;}
+
+#social-icon{text-align:right;}
+#social-icon ul{}
+#social-icon ul li{background-image:none !important; display:inline;}
+#footer{background-image:url(images/footer.gif); background-repeat:repeat-x; background-color:#000; padding:20px 0px 40px 0px}
+#footer, #footer p{font-size:11px; font-weight:normal;}
+#footer-right{float:right; padding:10px 10px 0px 0px ;}
+#footer-left{padding:20px 0px 0px 0px ;}
+
+
+.sep {
+	color: #CCC;
+	margin: 0 8px;
+}
+.ico-small {
+	vertical-align: middle;
+	margin: 0 5px 2px 0;
+}
+#wp-calendar caption {width: 300px; text-align: center; background: #efefef; color: #585858; padding: 5px 0 5px 0;}
+#wp-calendar { border-collapse:collapse; width: 300px; text-align: center;}
+#wp-calendar thead th {padding: 5px 0 5px 10px; font-weight: bold;}
+#wp-calendar tbody td, #wp-calendar #prev {padding: 5px 0 5px 10px;}
+#wp-calendar #today, #wp-calendar tbody td:hover, #wp-calendar #prev:hover {color: #000; background: #eee;padding: 5px 0 5px 10px;}
+#wp-calendar a {padding: 2px 0; font-weight: bold;}
+#wp-calendar tfoot td {padding: 3px 0;}
+#calendar_wrap {display: block; width: 300px; padding: 0 1px 1px 0; margin: 5px 0 0 0;}
+#wp-calendar a:hover {background: #eee;color: #fff;}
+#wp-calendar #next {text-align: right; color: #000; padding: 5px 10px 5px 0;}
+#wp-calendar #next:hover {color: #000; background: #eee;padding: 5px 10px 5px 0;}
+#wp-calendar #prev {text-align: left;}

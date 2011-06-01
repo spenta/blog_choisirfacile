@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0;
+	margin-top:-10px;
+	padding:0;
+	width:100%;
+	font-size:13px;
+	background: url(images/background_index.jpg) repeat-x #FFF;
+	font-family:Arial, Helvetica, sans-serif
+}
+
+
+/***************** Style du header *******************/
+#header{
+	height:68px;
+	width:100%;
+	background-color:#333;
+}
+
+
+
+/*************** Style de la page *******************/
+#contenu{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	height:800px;
+}
+
+div#haut{
+	height:50px;
+	width:960px;
+}
+
+div#titre{
+	position:relative;
+	height:50px;
+	width:960px;	
+}
+
+div#titre p{
+	margin:0;
+	padding:0;
+	width:100%;
+	position:absolute;	
+	bottom:0;
+	color:#ffffff;
+	text-align:center;
+}
+
+
+div#banniere{
+	margin-top:32px;
+	height:297px;
+	width:960px;
+}
+
+div#images{
+	height:297px;
+	width:234px;
+	float:left;
+}
+
+.image_1{
+	margin-right:128px;
+}
+
+.image_2{
+	margin-right:130px;
+}
+
+#image{
+	width:234px;
+	height:216px;
+}
+
+#information img{
+	float:left;
+	height:48px;
+	width:48px;
+}
+
+#information p{
+	position:relative;
+	left:10px;
+	padding-top:0px;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:17px;
+}
+
+#sous_information{
+	clear:both;
+	padding-top:10px;
+	padding-left:5px;
+	color:#FFFFFF;
+	font-style:italic;
+	font-size:13px;
+}
+
+#separateur{
+	background-image:url("images/separateur.png");
+	height:27px;
+	width:960px;
+}
+
+#bouton{
+	position:relative;
+	padding-top:23px;
+	background-image:url("images/bouton_home.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	height:93px;
+	width:225px;
+	margin:auto;
+}
+
+#bouton p{
+	text-align:center;
+	font-size:21px;
+	font-weight:bold;
+}
+
+#bouton a{
+	text-decoration:none;
+	color:#555555;
+}

@@ -1,0 +1,31 @@
+.feat-cat-entry  {
+  font-size: 12px;
+  padding: 0 !important;
+}
+.feat-cat-meta {
+	clear: both;
+	height: auto;
+	width: auto;
+	display: block;
+	margin: 0px 0 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d8d8d8;
+    overflow: hidden;
+}
+.fi {
+  border: 0;
+  padding: 0px;
+  margin: 0 15px 0 0 !important;
+}
+.feat-cat-meta h4 {
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+.feat-cat-meta h4 a, .feat-cat-meta h4 a:visited {
+  color: #5a7c00;
+  font-size: 16px;
+}
+.clearfix {
+  clear: both;
+}
+

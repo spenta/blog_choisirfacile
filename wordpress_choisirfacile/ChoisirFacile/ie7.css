@@ -1,0 +1,33 @@
+#fiche_bouton{
+	float:right;
+}
+
+.info_fiche{
+	float:left;
+}
+
+.info_fiche p{
+	position:relative;
+	padding-left:70px;
+}
+
+.img_tableau{
+	margin-top:-25px;
+}
+
+.attr_tableau{
+	position:relative;
+	top:-30px;
+}
+
+#tableau_desc{
+	margin-top:-10px;
+}
+
+#fiche_complete > div{
+	margin-top:49px;
+}
+
+.commentaire_tableau{
+	padding-bottom:5px;
+}

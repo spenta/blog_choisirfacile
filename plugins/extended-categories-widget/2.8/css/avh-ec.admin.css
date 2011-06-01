@@ -1,0 +1,108 @@
+.footer_avhec {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+div.clearer {
+	clear: both;
+	line-height: 1px;
+	font-size: 1px;
+	height: 1px;
+}
+
+/* Metabox in General */
+table.avhec-options {
+	font-size: 11px;
+}
+
+.avhec-metabox-wrap {
+	font-size: 11px;
+}
+
+.avhec-metabox-wrap .p {
+	font-size: 11px;
+	line-height: 140%;
+	margin: 1em 0;
+}
+
+#avhecBoxOptions option {
+	padding: .5em;
+}
+
+.avhec-metabox-wrap span.description {
+	font-size: 11px;
+}
+
+.avhec-metabox-wrap .b {
+	font-weight: bold;
+}
+
+.avhec-metabox-wrap ul {
+	margin-bottom: 1em;
+}
+
+.avhec-metabox-wrap ul li {
+	line-height: 120%;
+	list-style: disc inside none;
+	margin-bottom: 0;
+}
+
+#avhec-options input {
+	font-size: 11px;
+}
+
+#avhec-generaloptions input {
+	font-size: 11px;
+}
+
+/* Metabox FAQ */
+#avhecBoxFAQ .inside ul {
+	font-size: 11px;
+	margin-bottom: 6px;
+}
+#avhecBoxFAQ .inside ul li{
+	line-height: 120%;
+    list-style: disc inside none;
+    margin-bottom: 0;
+}
+
+/* Metabox Donations*/
+#avhecBoxDonations .inside {
+	font-size: 12px;
+}
+
+#avhecBoxDonations .versions {
+	padding: 6px 10px 12px;
+}
+
+/* Metabox Donations*/
+#avhecBoxTranslation .inside {
+	font-size: 12px;
+}
+
+/* Metabox in post and page */
+#post_avhec_category_group {
+	width: 100%;
+}
+
+#avhec-catlist {
+	-moz-border-radius: 4px 4px 4px 4px;
+	background-color: #FFFFFF;
+	border: 1px solid #DFDFDF;
+	height: 20em;
+	margin-bottom: -1.8em;
+	overflow: auto;
+	width: 95%;
+}
+
+#avhec-catlist ul {
+	padding: 3px;
+}
+
+#avhec-catlist li ul {
+	padding: 0px;
+}
+
+#avhec-catlist li {
+	margin-bottom: 0px;
+}
