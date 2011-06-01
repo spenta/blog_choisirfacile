@@ -25,7 +25,7 @@ define('DB_NAME', 'choisirfacile-phpfogapp-com');
 define('DB_USER', 'choisirfaci-6665');
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', 'Spent4Manah');
+define('DB_PASSWORD', 'manah');
 
 /** Adresse de l'hébergement MySQL. */
 define('DB_HOST', 'localhost');
